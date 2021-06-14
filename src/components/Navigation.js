@@ -1,107 +1,61 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import { makeStyles, Container } from "@material-ui/core"
-
+import "../index.css";
 import "../App.css";
-//import { Router } from '@material-ui/icons';
-
-
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     padding: "120px"
-//   }
-// }));
-
-const projectInfo = [
-  {
-    title: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: `project1image`,
-    appLink: `link to app`,
-    gitLink: `link to repo`
-  },
-  {
-    title: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: `project2image`,
-    appLink: `link to app`,
-    gitLink: `link to repo`
-  },
-  {
-    title: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: `project3image`,
-    appLink: `link to app`,
-    gitLink: `link to repo`
-  },
-  {
-    title: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: `project4image`,
-    appLink: `link to app`,
-    gitLink: `link to repo`
-  },
-  {
-    title: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: `project5image`,
-    appLink: `link to app`,
-    gitLink: `link to repo`
-  },
-  {
-    title: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: `project6image`,
-    appLink: `link to app`,
-    gitLink: `link to repo`
-  },
-];
-
-function projectSelected() {
-  console.log('projectSelected')
-}
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 function Navigation() {
 
+  const navLinks = [
+    {
+      url: 'About'
+    },
+    {
+      url: 'Portfolio'
+    },
+    {
+      url: 'Resume'
+    },
+    {
+      url: 'Contact'
+    }
+  ]
+
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
+    <header >
+      <nav >
+      <List >
+        {navLinks.map((link, index) => (
+          <ListItem
+            className="flex-row px-1"
+            component = {Link}
+            to={link.url}
+            button
+            key={index}
+            >
+              <ListItemText primary={link.url} />
+          </ListItem>
+        ))}
+      </List>
+        {/* <ul className="flex-row">
+          <li className="mx-2">
             <a href="#about">
               About me
             </a>
           </li>
           <li>
+            <span>Portfolio</span>
+          </li>
+          <li>
+            <span>Resume</span>
+          </li>
+          <li>
             <span>Contact</span>
           </li>
-          {projectInfo.map((project) => (
-            <li
-              key={project.title}
-            >
-                <span onClick={() => projectSelected(project.name)}>
-                  {project.title}
-                </span>
-            </li>          
-          ))}
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import About from './components/About';
@@ -9,36 +9,36 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-
-
 function App() {
 
+  // const [currentTab, setCurrentTab] = useState(tabs[0]);
+  // const [tabs] = useState([
+  //   {
+  //     About,
+  //     Portfolio,
+  //     Contact,
+  //     Resume 
+  //   }
+  // ]);
+
   return (
-    <div>
-      <Header />
-      <About />
-    </div>
-  );
+    <Router>
+    <Switch>
+      <Route exact path="/" component={Header} />
+      <Route path="/portfolio" component={Portfolio} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/resume" component={Resume} />
+    </Switch>
+        <div>
+          {/* <Header /> */}
+          <main>
+            <About />
+            <Portfolio />
+          </main>
+          <Footer />
+        </div>
+    </Router>
+  )
 }
 
-
 export default App;
-
-{/* <Router>
-<Switch>
-  <Route exact path="/" component={Header} />
-  <Route path="/projects" component={Projects} />
-  <Route path="/contact" component={Contact} />
-  <Route path="/resume" component={Resume} />
-</Switch>
-<div>
-
-
-    some stuff about me
-  <main>
-    <Projects></Projects>
-    
-  </main>
-<Footer />
-</div>
-</Router> */}
