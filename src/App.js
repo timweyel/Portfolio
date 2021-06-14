@@ -1,28 +1,44 @@
 import React from 'react';
-
-import Typography from '@material-ui/core/Typography';
-
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Project from './components/Project';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+
 
 
 function App() {
 
   return (
     <div>
-      <main>
-        <Header></Header>
-        <Navigation></Navigation>
-        <Project></Project>
-        <Contact></Contact>
-        <Footer></Footer>
-      </main>
+      <Header />
+      <About />
     </div>
   );
 }
 
 
 export default App;
+
+{/* <Router>
+<Switch>
+  <Route exact path="/" component={Header} />
+  <Route path="/projects" component={Projects} />
+  <Route path="/contact" component={Contact} />
+  <Route path="/resume" component={Resume} />
+</Switch>
+<div>
+
+
+    some stuff about me
+  <main>
+    <Projects></Projects>
+    
+  </main>
+<Footer />
+</div>
+</Router> */}

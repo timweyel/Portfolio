@@ -1,5 +1,11 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Container } from "@material-ui/core"
+import { 
+  AppBar, 
+  Toolbar, 
+  Typography, 
+  Container, 
+  } from "@material-ui/core";
+import Navigation from './Navigation';
 
 export default function Header() {
   return (
@@ -8,6 +14,7 @@ export default function Header() {
         <Toolbar>
           <Typography variant="h6" color="inherit">
             Tim Weyel
+            <Navigation />
           </Typography>
         </Toolbar>
       </Container>
