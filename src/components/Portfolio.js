@@ -9,13 +9,13 @@ import {
   CardContent,
   CardMedia,
   Button } from '@material-ui/core';
-import { portfolioInfo } from "../assets/portfolioData";
+import { array } from "../assets/portfolioData";
 
 function Portfolio(props) {
   return (
     <div>
       <Grid container>
-        {portfolioInfo.map(project => (
+        {array.map(project => (
           <Grid item key={project.title}>
             <Card>
               <CardActionArea>

@@ -1,4 +1,4 @@
-const array = [
+const portfolioInfo = [
   {
     title: "Portfolio",
     tags: "",
