@@ -1,23 +1,26 @@
-import React from 'react';
-import { 
-  AppBar, 
-  Toolbar, 
-  Typography, 
-  Container, 
-  } from "@material-ui/core";
-import Navigation from './Navigation';
+// import React, { Component } from 'react';
+// import { 
+//   AppBar, 
+//   Toolbar, 
+//   Typography
+//   } from "@material-ui/core";
 
-export default function Header() {
-  return (
-    <AppBar position="static" color="primary">
-      <Container maxWidth="md">
-        <Toolbar>
-          <Typography variant="h6" color="inherit">
-            Tim Weyel
-            <Navigation />
-          </Typography>
-        </Toolbar>
-      </Container>
-    </AppBar>
-  );
-}
+// class Header extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <AppBar color="primary" position="static">
+//           <Toolbar>
+//             <Typography variant="title"
+//             color="inherit"
+//             >
+//               Tim Weyel
+//             </Typography>
+//           </Toolbar>
+//         </AppBar>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Header;
