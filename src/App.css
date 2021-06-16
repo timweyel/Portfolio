@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -40,11 +40,17 @@
 nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 ul {
   color: black;
 }
+
+/* .portfolioContainer {
+  margin-top: 20px;
+  padding: 30px;
+} */
 
 /* CSV
 /* 04080f,507dbc,a1c6ea,bbd1ea,dae3e5
