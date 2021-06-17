@@ -12,6 +12,8 @@ import { portfolioInfo } from "../assets/portfolioData";
 import { makeStyles } from '@material-ui/core/styles';
 // import '../../src/App.css';
 
+
+
 const useStyles = makeStyles({
   portfolioContainer: {
     marginTop: 20,
