@@ -12,12 +12,11 @@ import { portfolioInfo } from "../assets/portfolioData";
 import { makeStyles } from '@material-ui/core/styles';
 // import '../../src/App.css';
 
-
-
 const useStyles = makeStyles({
   portfolioContainer: {
     marginTop: 20,
-    padding: 30
+    padding: 30,
+
   }
 });
 
@@ -26,16 +25,15 @@ function Portfolio(props) {
   
   return (
     <div className={classes.portfolioContainer}>
-      <Grid container spacing={7} justify="center">
+      <Grid container spacing={4} justify="center">
         {portfolioInfo.map(project => (
-          <Grid item key={project.title}>
+          <Grid item md={4} lg={6} sm={2} xs={1} key={project.title}>
             <Card>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   alt="master ticket app"
-                  height="300"
-                  width="300"
+                  
                   image={project.imageURL}
                   title="masterTicket app"
                 />
