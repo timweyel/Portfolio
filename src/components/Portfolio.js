@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
-  Grid, 
-  Paper, 
+  Grid,  
   Typography,
   Card,
   CardActionArea,
@@ -9,20 +8,32 @@ import {
   CardContent,
   CardMedia,
   Button } from '@material-ui/core';
-import { array } from "../assets/portfolioData";
+import { portfolioInfo } from "../assets/portfolioData";
+import { makeStyles } from '@material-ui/core/styles';
+// import '../../src/App.css';
+
+const useStyles = makeStyles({
+  portfolioContainer: {
+    marginTop: 20,
+    padding: 30,
+
+  }
+});
 
 function Portfolio(props) {
+  const classes = useStyles();
+  
   return (
-    <div>
-      <Grid container>
-        {array.map(project => (
-          <Grid item key={project.title}>
+    <div className={classes.portfolioContainer}>
+      <Grid container spacing={4} justify="center">
+        {portfolioInfo.map(project => (
+          <Grid item md={4} lg={6} sm={2} xs={1} key={project.title}>
             <Card>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   alt="master ticket app"
-                  // height
+                  
                   image={project.imageURL}
                   title="masterTicket app"
                 />
@@ -34,7 +45,7 @@ function Portfolio(props) {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="red">
+                <Button size="small" color="primary">
                   Share
                 </Button>
               </CardActions>
