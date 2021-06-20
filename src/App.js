@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import { AppBar, Toolbar, Typography  } from '@material-ui/core';
 //import Header from './components/Header';
 import NavBar from './components/NavBar';
-// import About from './components/About';
+import About from './components/About';
 import Portfolio from './components/Portfolio';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 // import Resume from './components/Resume';
 // import Footer from './components/Footer';
 //import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import "./App.css";
+import "./App.css";
 // import "./index.css";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <AppBar color="primary" position="static">
           <Toolbar>
             <Typography
@@ -24,7 +24,9 @@ class App extends Component {
            <NavBar />
           </Toolbar>
         </AppBar>
+        <About />
         <Portfolio />
+        <Contact />
 
       </div>
     );
