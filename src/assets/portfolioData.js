@@ -3,7 +3,7 @@
 const portfolioInfo = [
   {
     title: "Portfolio",
-    tags: "tags",
+    alt: "Portfolio",
     description: "description",
     imageURL: "",
     githubURL: "",
@@ -11,7 +11,7 @@ const portfolioInfo = [
   },
   {
     title: "masterTicket",
-    tags: "tags",
+    alt: "masterTicket",
     description: "masterTicket is THE place to find music events for YOU. Find details about the events like venue information, band details, and see how many people have RSVP'd to attend. Check out the Featured Event section that showcases the biggest shows! And don't forget our Staff Picks section that highlights events recommended by masterTicket staff! Whether it's an 80s big hair rock band or a small, indie artist, you can find out all the details here at masterTicket!",
     imageURL: "./images/masterTicket.png",
     githubURL: "https://github.com/UCB-Bootcamp/masterTicket",
@@ -19,7 +19,7 @@ const portfolioInfo = [
   },
   {
     title: "Wine-n-Dine",
-    tags: "tags",
+    alt: "Wine-n-Dine",
     description: "Wine and Dine is an application built to help users pair wine with food. Wine and Dine also offers alternative cocktail options for users who would like a beverage other than wine.",
     imageURL: "./images/Wine-n-Dine.png",
     githubURL: "https://github.com/UCB-Bootcamp/wine-and-dine",
@@ -27,7 +27,7 @@ const portfolioInfo = [
   },
   {
     title: "Horiseon",
-    tags: "tags",
+    alt: "Horiseon",
     description: "Marketing website",
     imageURL: "./images/Horiseon.png",
     githubURL: "https://github.com/timweyel/Horiseon-Social-Solution-Services",
@@ -35,7 +35,7 @@ const portfolioInfo = [
   },
   {
     title: "Run Buddy",
-    tags: "tags",
+    alt: "Run Buddy",
     description: "A website that offers fitness training services.",
     imageURL: "./images/Run-Buddy.png",
     githubURL: "https://github.com/timweyel/run-buddy",
@@ -43,7 +43,7 @@ const portfolioInfo = [
   },
   {
     title: "Project 6",
-    tags: "tags",
+    alt: "Project 6",
     description: "description",
     imageURL: "./images/Wine-n-Dine-2.png",
     githubURL: "https://github.com/timweyel/run-buddy",

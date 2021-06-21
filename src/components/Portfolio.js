@@ -10,17 +10,20 @@ import {
   Button } from '@material-ui/core';
 import { portfolioInfo } from "../assets/portfolioData";
 import { makeStyles } from '@material-ui/core/styles';
-// import '../../src/App.css';
+import Project from './Project';
+import '../../src/App.css';
 
 const useStyles = makeStyles({
   portfolioContainer: {
     marginTop: 20,
     padding: 30,
-
+  },
+  images: {
+    height: 300
   }
 });
 
-function Portfolio(props) {
+function Portfolio() {
   const classes = useStyles();
   
   return (
@@ -30,18 +33,17 @@ function Portfolio(props) {
           <Grid item md={4} lg={6} sm={2} xs={1} key={project.title}>
             <Card>
               <CardActionArea>
-                <CardMedia
+                <CardMedia className={classes.images}
                   component="img"
-                  alt="master ticket app"
-                  
+                  alt={project.alt}                  
                   image={project.imageURL}
-                  title="masterTicket app"
                 />
                 <CardContent>
                   <Typography>
                     {project.title}
                   </Typography>
                   <Typography component="p">{project.description}</Typography>
+                  < Project portfolioInfo={portfolioInfo} />
                 </CardContent>
               </CardActionArea>
               <CardActions>
@@ -50,6 +52,7 @@ function Portfolio(props) {
                 </Button>
               </CardActions>
             </Card>
+
           </Grid>
         ))}
       </Grid>

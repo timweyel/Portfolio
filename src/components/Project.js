@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Project = ({ project }) => {
+const Project = ({ portfolioInfo }) => {
     
     return (
-        <div className="project row" key={project.name}>
-            <img src={project.img} alt={project.description}/>
-            <h2>{project.name}</h2>
-            <p><a href={project.deployedUrl}>live</a></p>
-            <p><a href={project.repoUrl}>repo</a></p>
+        <div className="project row" key={portfolioInfo.name}>
+            <img src={portfolioInfo.imageURL} alt={portfolioInfo.description}/>
+            <h2>{portfolioInfo.name}</h2>
+            <p><a href={portfolioInfo.deployedUrl}>live</a></p>
+            <p><a href={portfolioInfo.githubURL}>repo</a></p>
         </div>
     );
 };
