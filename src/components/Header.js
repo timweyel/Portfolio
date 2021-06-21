@@ -1,26 +1,23 @@
-// import React, { Component } from 'react';
-// import { 
-//   AppBar, 
-//   Toolbar, 
-//   Typography
-//   } from "@material-ui/core";
+import React from 'react';
+import NavBar from './NavBar';
 
-// class Header extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <AppBar color="primary" position="static">
-//           <Toolbar>
-//             <Typography variant="title"
-//             color="inherit"
-//             >
-//               Tim Weyel
-//             </Typography>
-//           </Toolbar>
-//         </AppBar>
-//       </div>
-//     );
-//   }
-// }
+const Header = props => {
+  const {
+      tabNames = [],
+      currentTab,
+      setCurrentTab
+  } = props;
 
-// export default Header;
+  return (
+      <header>
+          <h1>Tim Weyel</h1>
+          <NavBar
+            tabNames = {tabNames}
+            setCurrentTab = {setCurrentTab}
+            currentTab = {currentTab}
+          ></NavBar>
+      </header>
+  );
+};
+
+export default Header;

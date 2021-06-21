@@ -14,9 +14,15 @@ code {
 
 li {
   list-style: none;
+  ;
 }
 
-
+nav {
+  display: flex;
+  position:fixed;
+  top: 0px;
+  width: 75%;
+}
 
 nav a:hover {
   text-decoration: none;
