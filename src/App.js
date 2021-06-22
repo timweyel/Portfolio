@@ -11,28 +11,15 @@ import "./index.css";
 
 function App() {
 
-  // const [tabNames] = useState([
-  //   {name: 'About'},
-  //   {name: 'Portfolio'},
-  //   {name: 'Resume'},
-  //   {name: 'Contact'}
-  // ]);
-
-  // const [currentPage, setCurrentPage] = useState(tabNames[0]);
-  // console.log('current page', currentPage.name);
-
   return (
     <div>
-      <Header
-        // tabNames = {tabNames}
-        // setCurrentTab = {setCurrentPage}
-        // currentTab = {currentPage.name}
-      ></Header>
+      <Header></Header>
+      
       <main>
-     
-        <Portfolio />
-        <About />
-        <Contact />
+        <NavBar />
+        {/* <Portfolio /> */}
+        {/* <About /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

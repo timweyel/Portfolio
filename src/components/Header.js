@@ -2,20 +2,10 @@ import React from 'react';
 import NavBar from './NavBar';
 
 const Header = () => {
-  // const {
-  //     tabNames = [],
-  //     currentTab,
-  //     setCurrentTab
-  // } = props;
 
   return (
       <header>
           <h1>Tim Weyel</h1>
-          {/* <NavBar
-            // tabNames = {tabNames}
-            // setCurrentTab = {setCurrentTab}
-            // currentTab = {currentTab}
-          ></NavBar> */}
       </header>
   );
 };
