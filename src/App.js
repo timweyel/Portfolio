@@ -11,26 +11,28 @@ import "./index.css";
 
 function App() {
 
-  const [tabNames] = useState([
-    {name: 'About'},
-    {name: 'Portfolio'},
-    {name: 'Resume'},
-    {name: 'Contact'}
-  ]);
+  // const [tabNames] = useState([
+  //   {name: 'About'},
+  //   {name: 'Portfolio'},
+  //   {name: 'Resume'},
+  //   {name: 'Contact'}
+  // ]);
 
-  const [currentTab, setCurrentTab] = useState(tabNames[0]);
-  console.log('current tab', currentTab.name);
+  // const [currentPage, setCurrentPage] = useState(tabNames[0]);
+  // console.log('current page', currentPage.name);
 
   return (
     <div>
       <Header
-        tabNames = {tabNames}
-        setCurrentTab = {setCurrentTab}
-        currentTab = {currentTab.name}
+        // tabNames = {tabNames}
+        // setCurrentTab = {setCurrentPage}
+        // currentTab = {currentPage.name}
       ></Header>
       <main>
+     
         <Portfolio />
         <About />
+        <Contact />
       </main>
       <Footer />
     </div>

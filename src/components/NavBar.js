@@ -4,18 +4,27 @@ import "../App.css";
 
 
 const NavBar = props => {
-  const {
-    tabNames = [],
-    currentTab,
-    setCurrentTab
-} = props;
+//   const {
+//     tabNames = [],
+//     currentPage,
+//     setCurrentPage
+// } = props;
+const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
 
   return (
     <nav>
       <ul className="flex-row">
-        {tabNames.map((tab) => (
-          <li className={`col ${currentTab === tab.name && 'navActive'}`} key = {tab.name}>
-            <span onClick={() => setCurrentTab(tab)}>{tab.name}</span>
+        {tabs.map(tab => (
+          <li key = {tab}>
+            <a
+              href={'#' + tab.toLowerCase()} 
+              onClick={() => props.handlePageChange(tab)}
+              className={
+                props.currentPage === tab ? 'nav-link active' : 'nav-link'
+              }
+            >
+              {tab}
+            </a>
           </li>
         ))}
       </ul>
