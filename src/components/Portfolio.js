@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ReactDOM } from 'react-dom';
 import { 
   Grid,  
   Typography,
@@ -7,13 +8,13 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Button } from '@material-ui/core';
+  Button,
+  makeStyles } from '@material-ui/core';
 import { portfolioInfo } from "../assets/portfolioData";
-import { makeStyles } from '@material-ui/core/styles/';
 import Project from './Project';
 import NavBar from './NavBar';
 import Contact from './Contact';
-//import Resume from './Resume';
+// import Resume from './Resume';
 import About from './About';
 
 import '../../src/App.css';
@@ -28,7 +29,7 @@ const useStyles = makeStyles({
   }
 });
 
-function Portfolio() {
+const Portfolio = () => {
   const classes = useStyles();
   
   const [currentPage, handlePageChange] = useState('Home');
@@ -80,6 +81,8 @@ function Portfolio() {
       <div>{renderPage(currentPage)}</div>
     </div>
   )
+
 }
+
 
 export default Portfolio;

@@ -1,20 +1,24 @@
 import React from 'react';
+// import ReactDOM from 'react-dom';
+import Header from './Header';
 import "../index.css";
 import "../App.css";
 
-function NavBar(props) {
-
-const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
-
+const NavBar = ({tabs}) => {
+// handlePageChange() {
+//   alert('I am event handler');
+// }
+console.log(tabs);
   return (
-    <ul className="flex-row">
-      {tabs.map(tab => (
+    <div className="navbar">
+      <ul className="flex-row">
+      {tabs && tabs.map(tab => (
         <li key = {tab}>
           <a
             href={'#' + tab.toLowerCase()} 
-            onClick={() => props.handlePageChange(tab)}
+            onClick={() => tab.handlePageChange(tab)}
             className={
-              props.currentPage === tab ? 'nav-link active' : 'nav-link'
+              tab.currentPage === tab ? 'nav-link active' : 'nav-link'
             }
           >
             {tab}
@@ -22,7 +26,8 @@ const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
         </li>
       ))}
     </ul>
-  );
-};
+    </div>
+  )
+}
 
 export default NavBar;

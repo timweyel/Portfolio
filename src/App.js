@@ -1,29 +1,53 @@
-import React, { useState } from 'react';
-import Header from './components/Header';
-import NavBar from './components/NavBar';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-// import Resume from './components/Resume';
-import Footer from './components/Footer';
-import "./App.css";
-import "./index.css";
+// import React, { useState } from 'react';
+// import Header from './components/Header';
+// import NavBar from './components/NavBar';
+// import About from './components/About';
 
-function App() {
+// import Contact from './components/Contact';
+// // import Resume from './components/Resume';
+// import Footer from './components/Footer';
+// import "./App.css";
+// import "./index.css";
 
-  return (
-    <div>
-      <Header></Header>
+// function App() {
+
+//   return (
+//     <div>
+//       <Header></Header>
       
-      <main>
-        <NavBar />
-        {/* <Portfolio /> */}
-        {/* <About /> */}
-        {/* <Contact /> */}
-      </main>
-      <Footer />
-    </div>
-  );
+
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+
+const App = () => {
+
+    return (
+      <div>
+        <header>
+          <Header />
+        </header>
+          <main>
+            <Portfolio />
+            {/* <About /> */}
+            {/* <Contact /> */}
+        </main>
+      </div>
+    )
+
 }
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
 
 export default App;
