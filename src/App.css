@@ -13,7 +13,7 @@
   }
 }
 
-/* .App-header {
+.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} */
+}
 
 .App-link {
   color: #61dafb;
@@ -37,29 +37,6 @@
   }
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
 ul {
   color: black;
 }
-
-/* .portfolioContainer {
-  margin-top: 20px;
-  padding: 30px;
-} */
-
-/* CSV
-/* 04080f,507dbc,a1c6ea,bbd1ea,dae3e5
-
-/* Array */
-/* ["04080f","507dbc","a1c6ea","bbd1ea","dae3e5"] */
-
-/* Object */
-/* {"Rich Black FOGRA 29":"04080f","Glaucous":"507dbc","Baby Blue Eyes":"a1c6ea","Beau Blue":"bbd1ea","Gainsboro":"dae3e5"} */
-
-/* Extended Array */
-/* [{"name":"Rich Black FOGRA 29","hex":"04080f","rgb":[4,8,15],"cmyk":[73,47,0,94],"hsb":[218,73,6],"hsl":[218,58,4],"lab":[2,0,-3]},{"name":"Glaucous","hex":"507dbc","rgb":[80,125,188],"cmyk":[57,34,0,26],"hsb":[215,57,74],"hsl":[215,45,53],"lab":[52,4,-38]},{"name":"Baby Blue Eyes","hex":"a1c6ea","rgb":[161,198,234],"cmyk":[31,15,0,8],"hsb":[210,31,92],"hsl":[210,63,77],"lab":[78,-4,-22]},{"name":"Beau Blue","hex":"bbd1ea","rgb":[187,209,234],"cmyk":[20,11,0,8],"hsb":[212,20,92],"hsl":[212,53,83],"lab":[83,-2,-15]},{"name":"Gainsboro","hex":"dae3e5","rgb":[218,227,229],"cmyk":[5,1,0,10],"hsb":[191,5,90],"hsl":[191,17,88],"lab":[90,-3,-2]}] */ 

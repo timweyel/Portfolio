@@ -1,33 +1,40 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import Header from './Header';
+import { Link } from "react-router-dom";
 import "../index.css";
 import "../App.css";
 
-const NavBar = ({tabs}) => {
-// handlePageChange() {
-//   alert('I am event handler');
-// }
-console.log(tabs);
+const NavBar = () => {
+
   return (
-    <div className="navbar">
-      <ul className="flex-row">
-      {tabs && tabs.map(tab => (
-        <li key = {tab}>
-          <a
-            href={'#' + tab.toLowerCase()} 
-            onClick={() => tab.handlePageChange(tab)}
-            className={
-              tab.currentPage === tab ? 'nav-link active' : 'nav-link'
-            }
-          >
-            {tab}
-          </a>
-        </li>
-      ))}
-    </ul>
-    </div>
-  )
+    <>
+        <nav className="flex-row">
+          <Link
+              to="/about"
+              activeClassName=""
+              className="">
+              About Me
+          </Link>
+          <Link
+              to="/portfolio"
+              activeClassName=""
+              className="">
+              Portfolio
+          </Link>
+          <Link
+              to="/resume"
+              activeClassName=""
+              className="">
+              Resume
+          </Link>
+          <Link
+              to="/contact"
+              activeClassName=""
+              className="">
+              Contact Me
+          </Link>
+        </nav>
+    </>
+  );
 }
 
 export default NavBar;

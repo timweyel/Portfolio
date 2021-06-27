@@ -2,9 +2,9 @@ import React from 'react';
 
 function About() {
   return (
-    <section>
+    <div>
       <h1 id="about">About me</h1>
-    </section>
+    </div>
   );
 }
 

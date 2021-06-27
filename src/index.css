@@ -12,16 +12,18 @@ code {
     monospace;
 }
 
+h1 {
+  color: rgb(105, 109, 125);
+  margin-left: 25%;
+}
+
 li {
   list-style: none;
-  ;
+  justify-self: space-between;
 }
 
 nav {
-  display: flex;
-  position:fixed;
-  top: 0px;
-  width: 75%;
+  justify-content: space-between;
 }
 
 nav a:hover {
@@ -34,7 +36,6 @@ nav  li {
 
 ul {
   display: flex-row;
-
 }
 
 .flex-row {
@@ -62,6 +63,7 @@ ul {
 
 .navbar {
   display: flex;
+  margin: auto;
 
 }
 
@@ -77,3 +79,6 @@ ul {
   padding-left: var(--spacing-one);
 }
 
+.spacer {
+  margin: 0 50px 0 50px;
+}

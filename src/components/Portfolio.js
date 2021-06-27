@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { ReactDOM } from 'react-dom';
+import React from 'react';
 import { 
   Grid,  
   Typography,
@@ -12,11 +11,6 @@ import {
   makeStyles } from '@material-ui/core';
 import { portfolioInfo } from "../assets/portfolioData";
 import Project from './Project';
-import NavBar from './NavBar';
-import Contact from './Contact';
-// import Resume from './Resume';
-import About from './About';
-
 import '../../src/App.css';
 
 const useStyles = makeStyles({
@@ -32,21 +26,6 @@ const useStyles = makeStyles({
 const Portfolio = () => {
   const classes = useStyles();
   
-  const [currentPage, handlePageChange] = useState('Home');
-
-  const renderPage = () => {
-    switch(currentPage) {
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
-      // case 'Resume':
-      //   return <Resume />;
-      default: 
-      return <About />
-    }
-  }
-
   return (
     <div className={classes.portfolioContainer}>
       <Grid container spacing={4} justify="center">
@@ -77,8 +56,6 @@ const Portfolio = () => {
           </Grid>
         ))}
       </Grid>
-      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-      <div>{renderPage(currentPage)}</div>
     </div>
   )
 

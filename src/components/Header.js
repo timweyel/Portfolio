@@ -1,16 +1,18 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import NavBar from './NavBar';
+import '../../src/index.css';
 
 const Header = () => {
     
-    const tabs = ["About", "Portfolio", "Contact", "Resume"];
-    return (
-      <header className="flex-row">
-        <h1>Tim Weyel</h1>
-        <NavBar tabs={tabs} />
-      </header>
-    );
+  return (
+    <header className="flex-row">
+      <h1 className="name">Tim Weyel</h1>
+      <div className="spacer"></div>
+      <div className="navbar">
+        <NavBar />
+      </div>
+    </header>
+  );
 };
 
 export default Header;
