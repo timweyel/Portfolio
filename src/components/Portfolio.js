@@ -30,7 +30,7 @@ const Portfolio = () => {
     <div className={classes.portfolioContainer}>
       <Grid container spacing={4} justify="center">
         {portfolioInfo.map(project => (
-          <Grid item md={4} lg={6} sm={2} xs={1} key={project.title}>
+          <Grid item xs={12} md={4} sm={6} lg={6} key={project.title}>
             <Card>
               <CardActionArea>
                 <CardMedia className={classes.images}
