@@ -1,23 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', 'Oxygen';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(111, 146, 131);
 }
-
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 h1 {
-  color: rgb(105, 109, 125);
-  margin-left: 25%;
+  color: rgb(240, 220, 202);
+  margin-left: 15%;
 }
 
-li {
+header {
+
+}
+
+/* li {
   list-style: none;
   justify-self: space-between;
 }
@@ -26,13 +33,22 @@ nav {
   justify-content: space-between;
 }
 
-nav a:hover {
-  text-decoration: none;
-}
 
 nav  li {
   cursor: pointer;
+  
+}*/
+
+nav a:hover {
+  text-decoration: none;
+  /* background-color: rgb(141, 159, 135); */
 }
+
+.navlink {
+  /* padding: 0 10px; */
+  text-decoration: none;
+  color: rgb(240, 220, 202);
+} 
 
 ul {
   display: flex-row;
@@ -50,6 +66,8 @@ ul {
 .flex-end {
   justify-content: flex-end;
 }
+
+
 
 .mx-1 {
   margin-right: var(--spacing-one);

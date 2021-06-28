@@ -1,35 +1,30 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "../index.css";
-import "../App.css";
+
 
 const NavBar = () => {
 
   return (
     <>
-        <nav className="flex-row">
+        <nav className="flex-row text-2xl ">
           <Link
               to="/about"
-              activeClassName=""
-              className="">
+              className="navlink hover:bg-green-900 md:p-2 rounded-lg">
               About Me
           </Link>
           <Link
               to="/portfolio"
-              activeClassName=""
-              className="">
+              className="navlink hover:bg-green-900 md:p-2 rounded-lg">
               Portfolio
           </Link>
           <Link
               to="/resume"
-              activeClassName=""
-              className="">
+              className="navlink hover:bg-green-900 md:p-2 rounded-lg">
               Resume
           </Link>
           <Link
               to="/contact"
-              activeClassName=""
-              className="">
+              className="navlink hover:bg-green-900 md:p-2 rounded-lg">
               Contact Me
           </Link>
         </nav>

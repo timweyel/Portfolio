@@ -5,10 +5,10 @@ import '../../src/index.css';
 const Header = () => {
     
   return (
-    <header className="flex-row">
-      <h1 className="name">Tim Weyel</h1>
-      <div className="spacer"></div>
-      <div className="navbar">
+    <header className="flex flex-row align-middle pt-6 ">
+      <h1 className="name text-6xl text-left  flex-1 align-middle ">Tim Weyel</h1>
+      {/* <div className="spacer"></div> */}
+      <div className="navbar flex-1">
         <NavBar />
       </div>
     </header>
