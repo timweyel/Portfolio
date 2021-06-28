@@ -20,6 +20,9 @@ const useStyles = makeStyles({
   },
   images: {
     height: 300
+  },
+  cardHeight: {
+    height: "100%"
   }
 });
 
@@ -31,7 +34,7 @@ const Portfolio = () => {
       <Grid container spacing={4} justify="center">
         {portfolioInfo.map(project => (
           <Grid item xs={12} md={4} sm={6} lg={6} key={project.title}>
-            <Card>
+            <Card className={classes.cardHeight}>
               <CardActionArea>
                 <CardMedia className={classes.images}
                   component="img"
