@@ -1,14 +1,22 @@
 
 import React from 'react';
-import { AppBar, Toolbar, Typography, Container } from "@material-ui/core"
+import { AppBar, Toolbar, Typography, Container, makeStyles } from "@material-ui/core"
+
+const useStyles = makeStyles({
+  footer: {
+    backgroundColor: "rgb(111, 146, 131)"
+  }
+});
 
 function Footer() {
+  const classes = useStyles();
+
   return (
-      <AppBar position="static" color="primary">
+      <AppBar className={classes.footer} position="static" >
         <Container maxWidth="md">
           <Toolbar>
-            <Typography variant="body1" color="inherit">
-              &copy; by Me
+            <Typography >
+              made by: Me
             </Typography>
           </Toolbar>
         </Container>

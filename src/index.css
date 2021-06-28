@@ -15,13 +15,13 @@ code {
     monospace;
 } */
 
+footer {
+  background-color: rgb(111, 146, 131);
+}
+
 h1 {
   color: rgb(240, 220, 202);
   margin-left: 15%;
-}
-
-header {
-
 }
 
 /* li {
