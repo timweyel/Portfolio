@@ -15,7 +15,7 @@ import '../../src/App.css';
 
 const useStyles = makeStyles({
   portfolioContainer: {
-    marginTop: 20,
+    // marginTop: 20,
     padding: 30,
   },
   images: {
@@ -33,7 +33,7 @@ const Portfolio = () => {
     <div className={classes.portfolioContainer}>
       <Grid container spacing={4} justify="center">
         {portfolioInfo.map(project => (
-          <Grid item xs={12} md={4} sm={6} lg={6} key={project.title}>
+          <Grid item xs={12} md={4} sm={6} lg={4} key={project.title}>
             <Card className={classes.cardHeight}>
               <CardActionArea>
                 <CardMedia className={classes.images}

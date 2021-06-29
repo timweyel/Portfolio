@@ -21,7 +21,7 @@ footer {
 
 h1 {
   color: rgb(240, 220, 202);
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 /* li {
@@ -67,8 +67,6 @@ ul {
   justify-content: flex-end;
 }
 
-
-
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -77,12 +75,6 @@ ul {
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
-}
-
-.navbar {
-  display: flex;
-  margin: auto;
-
 }
 
 .img-thumbnail {
@@ -97,6 +89,116 @@ ul {
   padding-left: var(--spacing-one);
 }
 
-.spacer {
-  margin: 0 50px 0 50px;
+@media screen and (max-width: 640px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+  .navlink {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 640.1px) and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+  .navlink {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768.1px) and (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+  .navlink {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1024.1px) and (max-width: 1280px) {
+  .navbar {
+    width: 66%;
+    margin: auto;
+    justify-content: center;
+  }
+  h1 {
+    width: 33%;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+  }
+  .navlink {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1280.1px) and (max-width: 1536px) {
+  .navbar {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+  }
+  h1 {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+  }
+  .navlink {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1536.1px) {
+  .navbar {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+  }
+  h1 {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+  }
+  .navlink {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

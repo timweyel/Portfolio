@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import '../../src/index.css';
 
 const NavBar = () => {
 
   return (
     <>
-        <nav className="flex-row text-2xl ">
+        <nav className="flex-row sm:text-xl ">
           <Link
               to="/about"
               className="navlink hover:bg-green-900 md:p-2 rounded-lg">
