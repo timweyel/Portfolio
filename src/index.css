@@ -15,10 +15,6 @@ code {
     monospace;
 } */
 
-footer {
-  background-color: rgb(111, 146, 131);
-}
-
 h1 {
   color: rgb(240, 220, 202);
   margin-left: 10%;
@@ -44,11 +40,16 @@ nav a:hover {
   /* background-color: rgb(141, 159, 135); */
 }
 
+
 .navlink {
   /* padding: 0 10px; */
   text-decoration: none;
   color: rgb(240, 220, 202);
 } 
+
+p {
+  color: #CDC6A5;
+}
 
 ul {
   display: flex-row;
@@ -82,6 +83,12 @@ ul {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+}
+
+.photoContainer {
+  height: 200px;
+  width: 200px;
+
 }
 
 .px-1 {

@@ -4,7 +4,11 @@ import { AppBar, Toolbar, Typography, Container, makeStyles } from "@material-ui
 
 const useStyles = makeStyles({
   footer: {
-    backgroundColor: "rgb(111, 146, 131)"
+    backgroundColor: "rgb(111, 146, 131)",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    boxShadow: "none"
   }
 });
 
