@@ -1,14 +1,4 @@
-// const photo = "./images/masterTicket.png";
-
 const portfolioInfo = [
-  {
-    title: "Portfolio",
-    alt: "Portfolio",
-    description: "description",
-    imageURL: "",
-    githubURL: "",
-    deployedURL: "https://github.com/timweyel/portfolio",
-  },
   {
     title: "masterTicket",
     alt: "masterTicket",
@@ -20,34 +10,48 @@ const portfolioInfo = [
   {
     title: "Wine-n-Dine",
     alt: "Wine-n-Dine",
-    description: "Wine and Dine is an application built to help users pair wine with food. Wine and Dine also offers alternative cocktail options for users who would like a beverage other than wine.",
+    description: `When a user selects a wine, they are given a list of recipes that would pair with their selected wine.
+
+    A user can also hit a "Surprise Me!' button to be given a random wine and food pairing suggestion.
+    
+    Users can view previously selected wines to revisit at a later time in their history page.
+    
+    If a user feels like a cocktail instead of wine, they can select the cocktail button where they are given cocktail suggestions and a list of ingredients."`,
     imageURL: "./images/Wine-n-Dine.png",
     githubURL: "https://github.com/UCB-Bootcamp/wine-and-dine",
     deployedURL: "",
   },
   {
+    title: "Weather Dashboard",
+    alt: "Weather Dashboard",
+    description: "Weather Dashboard using the OpenWeatherMap api. A user can search for a city and it will return the current weather and 5-day forecast. Cities are saved to local storage for easy searching at later date.",
+    imageURL: "./images/weather-app.png",
+    githubURL: "https://github.com/timweyel/weather-dashboard",
+    deployedURL: "https://timweyel.github.io/weather-dashboard/",
+  },
+  {
     title: "Horiseon",
     alt: "Horiseon",
-    description: "Marketing website",
+    description: "We were given an existing codebase that needed to be refactored to improve its accessbility such that the final product was identical to the original design.",
     imageURL: "./images/Horiseon.png",
     githubURL: "https://github.com/timweyel/Horiseon-Social-Solution-Services",
-    deployedURL: "https://timweyel.github.io/Horiseon-Social-Solution-Services/#search-engine-optimization",
+    deployedURL: "https://timweyel.github.io/Horiseon-Social-Solution-Services/",
   },
   {
     title: "Run Buddy",
     alt: "Run Buddy",
-    description: "A website that offers fitness training services.",
+    description: "Refactor website to include media queries and flexbox to make the site more engaging and mobile-responsive.",
     imageURL: "./images/Run-Buddy.png",
     githubURL: "https://github.com/timweyel/run-buddy",
     deployedURL: "https://timweyel.github.io/run-buddy/",
   },
   {
-    title: "Project 6",
-    alt: "Project 6",
-    description: "description",
-    imageURL: "./images/Wine-n-Dine-2.png",
-    githubURL: "https://github.com/timweyel/run-buddy",
-    deployedURL: "https://timweyel.github.io/run-buddy/",
+    title: "Password Generator",
+    alt: "Password Generator",
+    description: "An application that a user can use to generate a random password based on criteria they’ve selected",
+    imageURL: "./images/password-generator.png",
+    githubURL: "https://github.com/timweyel/password-generator",
+    deployedURL: "https://timweyel.github.io/password-generator/",
   },
 ];
 

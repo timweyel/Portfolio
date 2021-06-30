@@ -11,28 +11,26 @@ import {
   makeStyles } from '@material-ui/core';
 import { portfolioInfo } from "../assets/portfolioData";
 import Project from './Project';
-import '../../src/App.css';
 
 const useStyles = makeStyles({
   portfolioContainer: {
     padding: 30,
-
   },
-  images: {
-    height: 300
-  },
-  cardHeight: {
-    height: "100%"
-  },
-  title: {
-    fontSize: "20px",
-    color: "#696D7D",
-    fontWeight: "bolder",
-    paddingBottom: "10px"
-  },
-  description: {
-    color: "#696D7D",
-  }
+    images: {
+      height: 300
+    },
+    cardHeight: {
+      height: "100%"
+    },
+    title: {
+      fontSize: "20px",
+      color: "#696D7D",
+      fontWeight: "bolder",
+      paddingBottom: "10px"
+    },
+    description: {
+      color: "#696D7D",
+    }
 });
 
 const Portfolio = () => {
@@ -60,7 +58,7 @@ const Portfolio = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" color="primary">
-                  Share
+               
                 </Button>
               </CardActions>
             </Card>
@@ -70,8 +68,6 @@ const Portfolio = () => {
       </Grid>
     </div>
   )
-
 }
-
 
 export default Portfolio;

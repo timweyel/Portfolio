@@ -88,38 +88,11 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-/* h4 {
-  font-weight: bolder;
-
-}
-
-/* h6 {
-  color: #696D7D;
-} */ */
-
-/* li {
-  list-style: none;
-  justify-self: space-between;
-}
-
-nav {
-  justify-content: space-between;
-}
-
-
-nav  li {
-  cursor: pointer;
-  
-}*/
-
-
 nav a:hover {
   text-decoration: none;
-  /* background-color: rgb(141, 159, 135); */
 }
 
 .navlink {
-  /* padding: 0 10px; */
   text-decoration: none;
   color: rgb(240, 220, 202);
 } 
