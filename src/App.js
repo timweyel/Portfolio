@@ -21,8 +21,6 @@ const App = () => {
         <Route component={Portfolio} exact path="/portfolio" />
         <Route component={Contact} exact path="/contact" />
       </Switch>
-    {/* <About />
-    <Contact /> */}
     <Footer />
     </BrowserRouter>
   );

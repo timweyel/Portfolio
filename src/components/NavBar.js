@@ -9,7 +9,7 @@ const NavBar = () => {
         <nav className="flex-row sm:text-xl ">
           <Link
               to="/about"
-              className="navlink hover:bg-green-900 md:p-2 rounded-lg">
+              className="navlink hover:bg-navBackground-900 md:p-2 rounded-lg">
               About Me
           </Link>
           <Link

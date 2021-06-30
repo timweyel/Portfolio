@@ -3,7 +3,7 @@ import photo from '../assets/profile pic.jpg';
 
 function About() {
   return (
-    <div className="container mx-auto px-10 ">
+    <div className=" mx-auto px-10 ">
       <div className="text-xl text-center pt-5 pb-5"></div>
         <div className="flex">
           <img src={photo} alt="Tim singing" className="photoContainer"/>

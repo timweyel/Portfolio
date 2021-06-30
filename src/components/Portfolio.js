@@ -15,14 +15,23 @@ import '../../src/App.css';
 
 const useStyles = makeStyles({
   portfolioContainer: {
-    // marginTop: 20,
     padding: 30,
+
   },
   images: {
     height: 300
   },
   cardHeight: {
     height: "100%"
+  },
+  title: {
+    fontSize: "20px",
+    color: "#696D7D",
+    fontWeight: "bolder",
+    paddingBottom: "10px"
+  },
+  description: {
+    color: "#696D7D",
   }
 });
 
@@ -42,10 +51,10 @@ const Portfolio = () => {
                   image={project.imageURL}
                 />
                 <CardContent>
-                  <Typography>
+                  <Typography className={classes.title}>
                     {project.title}
                   </Typography>
-                  <Typography component="p">{project.description}</Typography>
+                  <Typography component="h6">{project.description}</Typography>
                   < Project portfolioInfo={portfolioInfo} />
                 </CardContent>
               </CardActionArea>

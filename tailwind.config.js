@@ -17,7 +17,10 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-    }
+    },
+    backgroundColor: theme => ({
+      'navBackground': '#696D7D',
+    })
   },
   variants: {
     extend: {},
