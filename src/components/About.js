@@ -12,7 +12,8 @@ function About() {
                 Results-oriented, innovative professional known for ability to create alignment 
                 between internal and external stakeholders while translating user requirements 
                 into market-ready product solutions that delight clients. Ambitiously engaged in 
-                transitioning from working on what software gets built to how the software gets built.</p>
+                transitioning from working on what software gets built to how the software gets built.
+                I am currently enrolled in the UC Berkeley Full-Stack Coding Boot Camp.</p>
               <br />
             <p >When I'm not knee deep in code, I enjoy playing, coaching, and watching soccer, hiking 
             around the beautiful Santa Barbara area, or working on my house.</p>

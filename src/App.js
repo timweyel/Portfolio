@@ -15,7 +15,7 @@ const App = () => {
     <BrowserRouter>
     <Header />
       <Switch>
-        <Route component={Portfolio} exact path="/" />
+        <Route component={About} exact path="/" />
         <Route component={About} exact path="/about" />
         <Route component={Resume} exact path="/resume" />
         <Route component={Portfolio} exact path="/portfolio" />

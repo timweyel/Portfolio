@@ -54,6 +54,10 @@ button[disabled] {
   opacity: .8;
 }
 
+.download {
+  color: rgb(240, 220, 202);
+}
+
 form {
   width: 75%;
   margin: auto;
@@ -63,6 +67,10 @@ form {
 h1 {
   color: rgb(240, 220, 202);
   margin-left: 10%;
+}
+
+h3 {
+  color: rgb(240, 220, 202);
 }
 
 input {
@@ -127,8 +135,12 @@ textarea {
 	padding: 5px;
 }
 
-ul {
-  display: flex-row;
+.footerLinks {
+  margin: 0 auto;
+}
+
+a {
+  color: rgb(240, 220, 202);
 }
 
 .flex-row {
@@ -169,6 +181,13 @@ ul {
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
+}
+
+.resume {
+  background-color: #696D7D;
+  list-style-type: square;
+  width: 75%;
+  padding: 3%;
 }
 
 @media screen and (max-width: 640px) {
