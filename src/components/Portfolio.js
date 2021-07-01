@@ -11,6 +11,7 @@ import {
   makeStyles } from '@material-ui/core';
 import { portfolioInfo } from "../assets/portfolioData";
 import Project from './Project';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   portfolioContainer: {
@@ -36,8 +37,12 @@ const useStyles = makeStyles({
 const Portfolio = () => {
   const classes = useStyles();
   
+  console.log('portfolioInfo',portfolioInfo);
+  // console.log('project', Project);
+
   return (
-    <div className={classes.portfolioContainer}>
+    
+    <section className={classes.portfolioContainer}>
       <Grid container spacing={4} justify="center">
         {portfolioInfo.map(project => (
           <Grid item xs={12} md={4} sm={6} lg={4} key={project.title}>
@@ -52,7 +57,8 @@ const Portfolio = () => {
                   <Typography className={classes.title}>
                     {project.title}
                   </Typography>
-                  <Typography component="h6">{project.description}</Typography>
+                  <Typography component="span">{project.description}</Typography>
+                  {/* <Link to={{ pathname: portfolioInfo.githubURL }}>link</Link> */}
                   < Project portfolioInfo={portfolioInfo} />
                 </CardContent>
               </CardActionArea>
@@ -66,8 +72,9 @@ const Portfolio = () => {
           </Grid>
         ))}
       </Grid>
-    </div>
+    </section>
   )
+  
 }
 
 export default Portfolio;

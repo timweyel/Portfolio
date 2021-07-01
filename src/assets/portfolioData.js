@@ -5,7 +5,7 @@ const portfolioInfo = [
     description: "masterTicket is THE place to find music events for YOU. Find details about the events like venue information, band details, and see how many people have RSVP'd to attend. Check out the Featured Event section that showcases the biggest shows! And don't forget our Staff Picks section that highlights events recommended by masterTicket staff! Whether it's an 80s big hair rock band or a small, indie artist, you can find out all the details here at masterTicket!",
     imageURL: "./images/masterTicket.png",
     githubURL: "https://github.com/UCB-Bootcamp/masterTicket",
-    deployedURL: "",
+    deployedURL: "https://masterticket.herokuapp.com/",
   },
   {
     title: "Wine-n-Dine",
@@ -19,7 +19,7 @@ const portfolioInfo = [
     If a user feels like a cocktail instead of wine, they can select the cocktail button where they are given cocktail suggestions and a list of ingredients."`,
     imageURL: "./images/Wine-n-Dine.png",
     githubURL: "https://github.com/UCB-Bootcamp/wine-and-dine",
-    deployedURL: "",
+    deployedURL: "https://ucb-bootcamp.github.io/wine-and-dine/",
   },
   {
     title: "Weather Dashboard",
