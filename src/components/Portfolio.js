@@ -56,12 +56,12 @@ const Portfolio = () => {
                   <Typography component="span">{project.description}</Typography>
                   <p>
                   <span>
-                  <Link to={{ pathname: project.githubURL }}>Repo</Link>
+                  <Link to={{ pathname: project.githubURL }} target="_blank" className="repoDemoLink" rel="noreferrer">Repo</Link>
                   </span>
                   </p>
                   <p>
                   <span>
-                  <Link to={{ pathname: project.deployedURL }}>Demo</Link>
+                  <Link to={{ pathname: project.deployedURL }} target="_blank" className="repoDemoLink" rel="noreferrer">Demo</Link>
                   </span>
                   </p>
                 </CardContent>
