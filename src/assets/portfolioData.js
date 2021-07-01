@@ -48,7 +48,7 @@ const portfolioInfo = [
   {
     title: "Password Generator",
     alt: "Password Generator",
-    description: "An application that a user can use to generate a random password based on criteria they’ve selected",
+    description: "An application that allows a user to generate a random password based on the character criteria they’ve selected",
     imageURL: "./images/password-generator.png",
     githubURL: "https://github.com/timweyel/password-generator",
     deployedURL: "https://timweyel.github.io/password-generator/",

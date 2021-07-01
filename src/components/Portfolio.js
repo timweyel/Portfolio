@@ -10,7 +10,6 @@ import {
   Button,
   makeStyles } from '@material-ui/core';
 import { portfolioInfo } from "../assets/portfolioData";
-import Project from './Project';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
@@ -36,15 +35,12 @@ const useStyles = makeStyles({
 
 const Portfolio = () => {
   const classes = useStyles();
-  
-  console.log('portfolioInfo',portfolioInfo);
-  // console.log('project', Project);
 
   return (
     
     <section className={classes.portfolioContainer}>
       <Grid container spacing={4} justify="center">
-        {portfolioInfo.map(project => (
+        {portfolioInfo.map((project, i) => (
           <Grid item xs={12} md={4} sm={6} lg={4} key={project.title}>
             <Card className={classes.cardHeight}>
               <CardActionArea>
@@ -58,8 +54,16 @@ const Portfolio = () => {
                     {project.title}
                   </Typography>
                   <Typography component="span">{project.description}</Typography>
-                  {/* <Link to={{ pathname: portfolioInfo.githubURL }}>link</Link> */}
-                  < Project portfolioInfo={portfolioInfo} />
+                  <p>
+                  <span>
+                  <Link to={{ pathname: project.githubURL }}>Repo</Link>
+                  </span>
+                  </p>
+                  <p>
+                  <span>
+                  <Link to={{ pathname: project.deployedURL }}>Demo</Link>
+                  </span>
+                  </p>
                 </CardContent>
               </CardActionArea>
               <CardActions>
