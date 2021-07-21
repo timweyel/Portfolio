@@ -14,7 +14,7 @@ import masterticket2 from '../assets/images/masterTicket2.png';
 import wineNdine from '../assets/images/Wine-n-Dine.png';
 import masterTicket from '../assets/images/masterTicket.png';
 import weatherApp from '../assets/images/weather-app.png';
-import runbuddy from '../assets/images/Run-Buddy.png';
+import runBuddy from '../assets/images/Run-Buddy.png';
 import passwordGenerator from '../assets/images/password-generator.png';
 
 
@@ -85,7 +85,7 @@ const Portfolio = () => {
       title: "Run Buddy",
       alt: "Run Buddy",
       description: "Refactor website to include media queries and flexbox to make the site more engaging and mobile-responsive.",
-      imageURL: runbuddy,
+      imageURL: runBuddy,
       githubURL: "../assets/images/Run-Buddy.png",
       deployedURL: "https://timweyel.github.io/run-buddy/",
     },
