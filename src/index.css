@@ -58,6 +58,10 @@ button[disabled] {
   color: rgb(240, 220, 202);
 }
 
+.email {
+  font-weight: bold;
+}
+
 form {
   width: 75%;
   margin: auto;

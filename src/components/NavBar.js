@@ -22,11 +22,11 @@ const NavBar = () => {
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
           Resume
         </Link>
-        <Link
+        {/* <Link
           to="/contact"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
           Contact Me
-        </Link>
+        </Link> */}
       </nav>
     </>
   );

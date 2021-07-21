@@ -17,6 +17,7 @@ function About() {
               <br />
             <p >When I'm not knee deep in code, I enjoy playing, coaching, and watching soccer, hiking 
             around the beautiful Santa Barbara area, or working on my house.</p>
+            <p>I'd love to talk to you about any opportunities for us to work together. <a href="mailto:tweyel@gmail.com?subject=Want to chat?" className="email">Email Me</a></p>
           </div>
         </div>
     </div>
