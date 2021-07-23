@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary: #8c54ff;
-  --secondary: #696D7D;
-  --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #F0DCCA;
+  --primary: #BFC0C0;
+  --secondary: #4F5D75;
+  --tertiary: #2D3142;
+  --light: #FFFFFF;
+  --orange: #EF8354;
   --darker: #F0DCCA;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -25,7 +25,7 @@ body {
   font-family: 'Roboto', 'Oxygen';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(111, 146, 131);
+  background-color: var(--primary);
 }
 /* 
 code {
@@ -54,8 +54,14 @@ button[disabled] {
   opacity: .8;
 }
 
+.container {
+  display: flex;
+  margin-left: 20px;
+  width: auto;
+}
+
 .download {
-  color: rgb(240, 220, 202);
+  color: var(--orange);
 }
 
 .email {
@@ -68,13 +74,18 @@ form {
   color:#F0DCCA !important;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 h1 {
-  color: rgb(240, 220, 202);
+  color: var(--tertiary);
   margin-left: 10%;
 }
 
 h3 {
-  color: rgb(240, 220, 202);
+  color: var(--tertiary);
 }
 
 input {
@@ -92,17 +103,25 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
+li {
+  list-style-type: disc;
+}
+
+.list-headers {
+  font-weight: bold;
+}
+
 nav a:hover {
   text-decoration: none;
 }
 
 .navlink {
   text-decoration: none;
-  color: rgb(240, 220, 202);
+  color: var(--tertiary);
 } 
 
 p {
-  color: #CDC6A5;
+  color: var(--tertiary);
 }
 
 textarea {
@@ -112,16 +131,25 @@ textarea {
 	padding: 5px;
 }
 
+ul {
+  list-style-type: disc;
+  color: var(--tertiary);
+}
+
 .footerLinks {
   margin: 0 auto;
 }
 
+.footerUl {
+  list-style-type: none;
+}
+
 a {
-  color: rgb(240, 220, 202);
+  color: var(--tertiary);
 }
 
 .repoDemoLink {
-  color: #6F9283;
+  color: var(--secondary);
 }
 
 .flex-row {
@@ -165,7 +193,7 @@ a {
 }
 
 .resume {
-  background-color: #696D7D;
+  background-color: var(--secondary);
   list-style-type: square;
   width: 75%;
   padding: 3%;

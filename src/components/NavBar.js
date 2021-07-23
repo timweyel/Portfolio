@@ -9,19 +9,19 @@ const NavBar = () => {
       <nav className="flex-row sm:text-xl ">
         <Link
           to="/about"
-          className="navlink hover:bg-green-900 md:p-2 rounded-lg">
-          About Me
+          className="navlink hover:bg-green-900 md:p-2 rounded-lg pr-2  ">
+          | About Me | 
         </Link>
         <Link
           to="/portfolio"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
-          Portfolio
+          | Portfolio |
         </Link>
-        <Link
+        {/* <Link
           to="/resume"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
           Resume
-        </Link>
+        </Link> */}
         {/* <Link
           to="/contact"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">

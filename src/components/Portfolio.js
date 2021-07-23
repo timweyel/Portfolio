@@ -46,7 +46,7 @@ const Portfolio = () => {
     {
       title: "masterTicket2.0",
       alt: "masterTicket2",
-      description: "masterTicket2.0 is a refactor of our original masterTicket group project. masterTicket2.0 uses the MERN masterTicket2.0 uses the MERN (MongoDB, Express, React, Node) stack to provide a forum-like site where a user can post musical events and mark an event as something they are attending. Users also have a dashboard where they can see all of the events that they've posted as well as the one that are attending.",
+      description: "masterTicket2.0 is a refactor of our original masterTicket group project. masterTicket2.0 uses the MERN (MongoDB, Express, React, Node) stack to provide a forum-like site where a user can post musical events and mark an event as something they are attending. Users also have a dashboard where they can see all of the events that they've posted as well as the one that are attending.",
       imageURL: masterticket2,
       githubURL: "https://github.com/UCB-Bootcamp/masterTicket2.0",
       deployedURL: "https://masterticket2.herokuapp.com/",
