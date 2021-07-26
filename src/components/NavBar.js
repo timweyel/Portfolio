@@ -6,27 +6,27 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="flex-row sm:text-xl ">
+      <nav className="flex-row space-between sm:text-xl ">
         <Link
           to="/about"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg pr-2  ">
-          | About Me | 
+           About Me  
         </Link>
         <Link
           to="/portfolio"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
-          | Portfolio |
+          |  Portfolio
         </Link>
-        {/* <Link
-          to="/resume"
+        <Link
+          to="https://github.com/timweyel"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
-          Resume
-        </Link> */}
-        {/* <Link
-          to="/contact"
+          | Github
+        </Link>
+        <Link
+          to="https://www.linkedin.com/in/timweyel/"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
-          Contact Me
-        </Link> */}
+          | Linkedin
+        </Link>
       </nav>
     </>
   );
