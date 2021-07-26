@@ -34,6 +34,7 @@ function About() {
                     <li>HTML5</li>
                     <li>JavaScript</li>
                     <li>React</li>
+                    <li>Handlebars</li>
                     <li>Bootstrap, Material UI, Tailwind</li>
                   </ul>
               </div>
@@ -62,7 +63,7 @@ function About() {
                 around the beautiful Santa Barbara area, or working on my house.</p>
                   <br />
               <div>
-                <p >I'd love to talk to you about any opportunities for us to work together. <a href="mailto:tweyel@gmail.com?subject=Want to chat?" className="email ">Email Me or </a><a href={resume} download className="underline">Download My Resume</a></p>
+                <p >I'd love to talk to you about any opportunities for us to work together. <a href="mailto:tweyel@gmail.com?subject=Want to chat?" className="email ">Email Me</a> or <a href={resume} download className="underline">Download My Resume</a></p>
               </div>
           </div>
         </div>

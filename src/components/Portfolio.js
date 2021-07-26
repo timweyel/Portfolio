@@ -115,25 +115,17 @@ const Portfolio = () => {
                     {project.title}
                   </Typography>
                   <Typography component="span">{project.description}</Typography>
-                  <p>
-                    <span>
-                      <Link to={{ pathname: project.githubURL }} target="_blank" className="repoDemoLink" rel="noreferrer">Repo</Link>
-                    </span>
-                  </p>
-                  <p>
-                    <span>
-                      <Link to={{ pathname: project.deployedURL }} target="_blank" className="repoDemoLink" rel="noreferrer">Demo</Link>
-                    </span>
-                  </p>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-               
+              <CardActions className="button-group">
+                <Button variant="outlined" color="primary" size="large">
+                  <Link to={{ pathname: project.githubURL }} target="_blank" className="repoDemoLink" rel="noreferrer">Repo</Link>
+                </Button>
+                <Button variant="outlined" color="secondary" size="large">
+                  <Link to={{ pathname: project.deployedURL }} target="_blank" className="repoDemoLink" rel="noreferrer">Demo</Link>
                 </Button>
               </CardActions>
             </Card>
-
           </Grid>
         ))}
       </Grid>
