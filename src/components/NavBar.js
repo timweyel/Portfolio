@@ -18,12 +18,12 @@ const NavBar = () => {
           |  Portfolio
         </Link>
         <Link
-          to="https://github.com/timweyel"
+          to={{ pathname: "https://github.com/timweyel" }} target="_blank" 
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
           | Github
         </Link>
         <Link
-          to="https://www.linkedin.com/in/timweyel/"
+          to={{ pathname: "https://www.linkedin.com/in/timweyel/" }} target="_blank"
           className="navlink hover:bg-green-900 md:p-2 rounded-lg">
           | Linkedin
         </Link>
