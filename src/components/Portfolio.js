@@ -65,7 +65,7 @@ const Portfolio = () => {
     {
       title: "masterTicket",
       alt: "masterTicket",
-      description: "masterTicket is THE place to find music events for YOU. Find details about the events like venue information, band details, and see how many people have RSVP'd to attend. Check out the Featured Event section that showcases the biggest shows! And don't forget our Staff Picks section that highlights events recommended by masterTicket staff! Whether it's an 80s big hair rock band or a small, indie artist, you can find out all the details here at masterTicket! We build this project using express, express-handlebars, express-session, mysql2, and sequelize.",
+      description: "masterTicket is THE place to find music events for YOU. Find details about the events like venue information, band details, and see how many people have RSVP'd to attend. Check out the Featured Event section that showcases the biggest shows! And don't forget our Staff Picks section that highlights events recommended by masterTicket staff! Whether it's an 80s big hair rock band or a small, indie artist, you can find out all the details here at masterTicket! We built this project using express, express-handlebars, express-session, mysql2, and sequelize.",
       imageURL: masterTicket,
       githubURL: "https://github.com/UCB-Bootcamp/masterTicket",
       deployedURL: "https://masterticket.herokuapp.com/",
