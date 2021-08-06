@@ -23,28 +23,26 @@ const NavBar = () => {
       <AppBar position="relative" className={classes.appbar}>
         <Toolbar className="align=center">
           <Typography  variant="h6"  noWrap>
-            {/* <nav className="flex-row space-between sm:text-xl "> */}
-              <Link
-                to="/about"
-                className="navlink md:p-2">
-                About Me  
-              </Link>
-              <Link
-                to="/portfolio"
-                className="navlink md:p-2">
-                | Portfolio
-              </Link>
-              <Link
-                to={{ pathname: "https://github.com/timweyel" }} target="_blank" 
-                className="navlink md:p-2">
-                | Github
-              </Link>
-              <Link
-                to={{ pathname: "https://www.linkedin.com/in/timweyel/" }} target="_blank"
-                className="navlink md:p-2">
-                | Linkedin
-              </Link>
-            {/* </nav> */}
+            <Link
+              to="/about"
+              className="navlink md:p-2">
+              About Me  
+            </Link>
+            <Link
+              to="/portfolio"
+              className="navlink md:p-2">
+              | Portfolio
+            </Link>
+            <Link
+              to={{ pathname: "https://github.com/timweyel" }} target="_blank" 
+              className="navlink md:p-2">
+              | Github
+            </Link>
+            <Link
+              to={{ pathname: "https://www.linkedin.com/in/timweyel/" }} target="_blank"
+              className="navlink md:p-2">
+              | Linkedin
+            </Link>
           </Typography>
         </Toolbar>
       </AppBar>
