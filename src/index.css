@@ -69,7 +69,7 @@ h3 {
   color: var(--tertiary);
 }
 
-input {
+/* input {
   font-size: 1rem;
   padding: 0.25rem;
   border: 1px solid var(--dark);
@@ -82,24 +82,24 @@ input {
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
-}
+} */
 
-li {
+/* li {
   list-style-type: disc;
-}
+} */
 
-.list-headers {
+/* .list-headers {
   font-weight: bold;
-}
+} */
 
 nav a:hover {
   text-decoration: none;
 }
 
-.navlink {
+/* .navlink {
   text-decoration: none;
   color: var(--tertiary);
-} 
+}  */
 
 p {
   color: var(--tertiary);
@@ -112,10 +112,10 @@ textarea {
 	padding: 5px;
 }
 
-ul {
+/* ul {
   list-style-type: disc;
   color: var(--tertiary);
-}
+} */
 
 .footerLinks {
   margin: 0 auto;
@@ -129,9 +129,9 @@ a {
   color: var(--tertiary);
 }
 
-.repoDemoLink {
+/* .repoDemoLink {
   color: var(--secondary);
-}
+} */
 
 .flex-row {
   display: flex;
@@ -161,6 +161,7 @@ a {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+  /* object-fit: 'cover'; */
 }
 
 .photoContainer {
