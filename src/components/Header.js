@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="">
       {/* <h1 className="sm:text-3xl">Tim Weyel</h1> */}
-      <div className="navbar flex-row">
+      <div className="">
         <NavBar />
       </div>
     </header>
