@@ -29,7 +29,17 @@ body {
   font-family: 'Roboto', 'Oxygen';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background-color: var(--primary); */
+}
+
+main {
   background-color: var(--primary);
+}
+
+html {
+  background-color: var(--primary);
+  height: 100%;
 }
 
 .button-group {
@@ -88,13 +98,13 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 } */
 
-/* li {
+li {
   list-style-type: disc;
-} */
+}
 
-/* .list-headers {
+.list-headers {
   font-weight: bold;
-} */
+}
 
 nav a:hover {
   text-decoration: none;
@@ -116,10 +126,10 @@ textarea {
 	padding: 5px;
 }
 
-/* ul {
+ul {
   list-style-type: disc;
   color: var(--tertiary);
-} */
+}
 
 .footerLinks {
   margin: 0 auto;
@@ -202,6 +212,10 @@ textarea {
     padding-left: 5px;
     padding-right: 5px;
   }
+  .photoContainer {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 @media (min-width: 640.1px) and (max-width: 768px) {
@@ -223,6 +237,7 @@ textarea {
     padding-right: 10px;
     font-size: 18px;
   }
+
 }
 
 @media (min-width: 768.1px) and (max-width: 1024px) {

@@ -9,7 +9,8 @@ import '../../src/index.css';
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'var(--tertiary)'
   }
 }));
 
