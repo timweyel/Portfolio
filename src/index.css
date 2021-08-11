@@ -178,6 +178,10 @@ ul {
   padding: 3%;
 }
 
+.section {
+  padding: 0 4em;
+}
+
 @media screen and (max-width: 640px) {
   .navbar {
     width: 100%;

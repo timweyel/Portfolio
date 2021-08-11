@@ -4,7 +4,7 @@ import resume from '../assets/Resume - Tim Weyel.pdf';
 
 function About() {
   return (
-    <section className=" mx-auto px-10 ">
+    <section className="section">
       <div className="text-xl text-center pt-5 pb-5"></div>
         <div className="flex">
           <img src={photo} alt="Tim singing" className="photoContainer"/>
