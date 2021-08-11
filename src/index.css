@@ -224,6 +224,10 @@ ul {
     padding-right: 10px;
     font-size: 18px;
   }
+  .photoContainer {
+    height: 150px;
+    width: 150px;
+  }
 
 }
 
@@ -281,6 +285,9 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .section {
+    padding: 0 10em;
+  }
 }
 
 @media (min-width: 1536.1px) {
@@ -298,5 +305,8 @@ ul {
   .navlink {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .section {
+    padding: 0 15em;
   }
 }
