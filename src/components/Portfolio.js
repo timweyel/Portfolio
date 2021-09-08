@@ -16,6 +16,7 @@ import Container from '@material-ui/core/Container';
 import masterticket2 from '../assets/images/masterTicket2.png';
 import wineNdine from '../assets/images/Wine-n-Dine.png';
 import masterTicket from '../assets/images/masterTicket.png';
+import musicApp from '../assets/images/musicApp.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -76,14 +77,14 @@ const portfolioInfo = [
     githubURL: "https://github.com/UCB-Bootcamp/masterTicket",
     deployedURL: "https://masterticket.herokuapp.com/",
   },
-  // {
-  //   title: "Weather Dashboard",
-  //   alt: "Weather Dashboard",
-  //   description: "Weather Dashboard using the OpenWeatherMap api. A user can search for a city and it will return the current weather and 5-day forecast. Cities are saved to local storage for easy searching at later date.",
-  //   imageURL: weatherApp,
-  //   githubURL: "https://github.com/timweyel/weather-dashboard",
-  //   deployedURL: "https://timweyel.github.io/weather-dashboard/",
-  // },
+  {
+    title: "Music App",
+    alt: "Music App",
+    description: "This is a music player app build on React and GraphQL that was created through Reed Barger's React Bootcamp. Users can add links to YouTube or SoundCloud songs and they will be added to your library with cover art. Additionally, users can add or remove songs from their queue..",
+    imageURL: musicApp,
+    githubURL: "https://github.com/timweyel/apollo-music-share-app",
+    deployedURL: "https://apollo-music-share-app-jhhpswiey-timweyel.vercel.app/",
+  },
   // {
   //   title: "Run Buddy",
   //   alt: "Run Buddy",
